@@ -1,0 +1,47 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:id="@+id/ToTag"
+        android:layout_row="0"
+        android:layout_column="0" />
+
+    <EditText
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailField"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:hint="Enter your e-mail address" />
+
+    <EditText
+        android:layout_width="308dp"
+        android:layout_height="409dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="Your message here"
+        android:id="@+id/messageBody"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:textAlignment="gravity"
+        android:gravity="fill_vertical"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/sendButton"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:gravity="center|center_horizontal"
+        android:layout_gravity="center" />
+</GridLayout>
